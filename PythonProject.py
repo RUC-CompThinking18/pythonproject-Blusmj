@@ -2,7 +2,7 @@ import time
 import random
 
 def ask_YN(question): #Ask yes or no question
-   answer_YN=("yes","no) #Used for yes or no choices
+   answer_YN=("yes","no") #Used for yes or no choices
    response= none
    while response not in answer_YN:
       response = input (question) not in answer_YN
