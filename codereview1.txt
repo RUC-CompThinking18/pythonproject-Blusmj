@@ -1,0 +1,5 @@
+Right now I think I can see the basic outlines of what you're doing here, and I think I see where this will fit into your larger project. The code to wait for a proper response to the question prompt is quite well handled and is a pattern I could see suggesting to others who are doing similar work in waiting for responses. My primary concern right now is your documentation: I'm having a hard time really understanding where things like the "item" class fit in because your comments tend to focus on what individual lines are doing and not the big picture of the whole project. Remember what I said about long intro comments for functions: talk about their arguments and their place in the overall program.
+
+Stray concerns:
+None is capitalized in Python.
+As it stands right now "intro" will call itself indefinitely and create an infinite loop.
