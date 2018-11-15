@@ -50,6 +50,11 @@ def intro(): #Used to start the code and define
       print ("Attempting to touch the crystals, they inturn dissolved inside of you after contact.\n")
     elif ch1 == "no" or "No":#Selecting no chooses different events  as well
       print ("You look at the crystal, but a strong feeling in your gut told you not to mess with it.\n")
+    else:
+      print("Not a valid response. Please Input yes or no.\n")
+      while True:
+        if ch1 !="yes" or "Yes" or "no" or "No":
+         return ch1
 
 
 #class self:
