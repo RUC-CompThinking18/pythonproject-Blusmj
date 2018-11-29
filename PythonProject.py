@@ -1,65 +1,206 @@
 import time
 import random
+import sys#Used to end the program after the conclusion of the story
 #import image small drawings are going to be used for if I attatch pictures to the project
+class death:
+    def __init_(self, name):
+        self.name= name
+        return quit()
 
+def story(): #Used to start the code and define
+  print("...")
+  time.sleep(2) #gives intervals of 0 seconds between prints
+  print("... ")
+  time.sleep(2)
+  print ("You feel as though your floating.\n")
+  time.sleep(2)
+  print ("You attempt to feel around, but it feels as though your arms don't exist.\n")
+  time.sleep(2)
+  print ("What has happened to you?\n")
+  time.sleep(2)
+  print ("You feel that the body you moved in freely has been snatched away in the span of seconds\n")
+  time.sleep(2)
+  print ("The last thing you remember was the roaring of planes overhead and ear piercing whistle-like sounds.\n")
+  time.sleep(2)
+  print ("The thought of the memory gave a chilling sensation.\n")
+  time.sleep(2)
+  print ("After some time you see a light.\n")
+  time.sleep(2)
+  print ("With all the strength you had to muster you try to move towards it.\n ")
+  time.sleep(2)
+  print ("Each movement towards the light made you feel more strange than the last.\n")
+  time.sleep(2)
+  print ("As if your body was turning into jello.\n")
+  time.sleep(3)
+  print ("You emerge from the light and were greeted by rocks and giant white crystals scattered about the cave.\n ")
+  time.sleep(3)
+  print ("You take a step towards it...\n")
+  time.sleep(2)
+  print ("But immediately you notice that you don't have legs.\n")
+  time.sleep(2)
+  print ("You try to move as you used to, but to no avail.\n")
+  time.sleep(2)
+  print ("After trial and error you figure out that you can roll, but found that hopping around was more efficient.")
+  time.sleep(2)
+  print ("as you never felt tired or that you were straining yourself jumping up and down.\n")
+  time.sleep(2)
+  print ("After getting used to whatever your squishy feeling body turned into you continue to look for a way out.\n")
+  time.sleep(2)
+  print ("As you search for a way out, you find the entrance.\n")
+  time.sleep(2)
+  print ("However, at the entrance you see two human-like sihilouettes\n")
 
-def ch1():
-   ch1=("yes","Yes","No","no") #Used for yes or no choices
+  ch1=str(raw_input("Will you approach it?(Y/N)\n"))#Choice 0
+  if ch1  == "yes" or ch1 == "Yes\n": #Selecting yes shows different events
+    print ("You hop towards them and they look like swordsman and wizards from a fantasy game. \n")
+    time.sleep(3)
+    print ("One wore golden plated armor with a greatsword, while the other wore a silver robe and carried a royal-looking staff.\n")
+    time.sleep(2)
+    print("The two of them emanated a great power.")
+    time.sleep(2)
+    print ("The instance the swordsman saw you, he took a powerful stance as if he was about to strike.\n")
+    time.sleep(2)
+    print("He swings at you fiercly with his sword,but you dodge the first blow.\n")
 
-def intro(): #Used to start the code and define
-    print("...")
-    time.sleep(2) #gives intervals of 2 seconds between prints
-    print("... ")
-    time.sleep(2)
-    print ("You feel as though your floating.\n")
-    time.sleep(3)
-    print ("You attempt to feel around, but it feels as though your arms don't exist.\n")
-    time.sleep(2)
-    print ("What has happened to you?\n")
-    time.sleep(4)
-    print ("You feel that the body you moved in freely has been snatched away in the span of seconds\n")
-    time.sleep(3)
-    print ("The last thing you remember was the roaring of planes overhead and ear piercing whistle-like sounds.\n")
-    time.sleep(2)
-    print ("The thought of the memory gave a chilling sensation.\n")
-    time.sleep(2)
-    print ("After some time you see a light.\n")
-    time.sleep(3)
-    print ("With all the strength you had to muster you try to move towards it.\n ")
-    time.sleep(2)
-    print ("Each movement towards the light made you feel more strange than the last.\n")
-    time.sleep(2)
-    print ("As if your body was turning into jello.\n")
-    time.sleep(2)
-    print ("You emerge from the light and were greeted by rocks and giant blue crystal resting in the middle of the cave.\n ")
-    time.sleep(3)
-    print ("You take a step towards it...\n")
-    time.sleep(3)
-    print ("But immediately you notice that you don't have legs.\n")
-    time.sleep(3)
-    print ("You try to move as you used to, but to no avail.\n")
-    time.sleep(2)
-    print ("After trial and error you figure out that you can roll, but found that hopping around was more efficient.")
-    time.sleep(3)
-    print ("as you never felt tired or that you were straining yourself jumping up and down.\n")
-    time.sleep(2)
-    print ("After getting used to whatever your squishy feeling body turned into you face back towards the crystals.\n")
+    ch2=str(raw_input("Will you attack him or try to stop him? (Attack/Talk).\n"))
+    if ch2 == "attack" or ch2 == "Attack\n":#Make sure for them to choose uppercase and lowercase type in one or the other
+      print ("You brace yourself to fight the knight\n")
+      time.sleep(2)
+      print("You muster all the power you could gather and ended up shoot a ball of flame at the swordsman.\n")
+      time.sleep(2)
+      print ("A giant dust cloud of smoke spread around the cave after the impact.\n")
+      time.sleep(2)
+      print ("As the smoke cloud disperses, the field begins to clear\n")
+      time.sleep(2)
+      print ("The swordsman walks out unharmed and calls down a thunderbolt, shocking you to death.\n")
+      time.sleep(3)
+      print('"That slime actually thought he could handle us!"The swordsman walks off with a hearty laugh.\n')
+      return death #This causes the game to script to end
 
-    ch1=str(raw_input("Will you take the crystals?(Y/N)\n"))#Choice 1
-    if ch1 == "yes" or "Yes": #Selecting yes shows different events
-      print ("Attempting to touch the crystals, they inturn dissolved inside of you after contact.\n")
-    elif ch1 == "no" or "No":#Selecting no chooses different events  as well
-      print ("You look at the crystal, but a strong feeling in your gut told you not to mess with it.\n")
+    elif ch2 =="talk" or ch2 =="Talk\n":#The or sees if the user inputs talk or Talk and if they do they get the next prompts
+      print ("They both looked down at your attempts to communicate, and smiled\n")
+      time.sleep(2)
+      print ("The knight sheathed his sword and walked away\n")
+      time.sleep(2)
+      print ("He makes a gesture towards the robed man and in a flash you feel your body fade away\n")
+      time.sleep(2)
+      print ("The hell was that slime trying to do!?\n")
+      time.sleep(2)
+      print ("The knight laughs with a hearty laugh as him and the man in the robe walk away.\n")
+      return death
     else:
-      print("Not a valid response. Please Input yes or no.\n")
-      while True:
-        if ch1 !="yes" or "Yes" or "no" or "No":
-         return ch1
+        print("Not a valid response. Please Input yes or no.\n")
 
 
-#class self:
- #def__init__(self, item_type, name)
- #self.self_type = self_type
- #self.name = name
- #
-intro()
+  elif ch1 == "no" or ch1 == "No\n":#Selecting no chooses different events  as well
+      print ("You look at the silhouettes, but a strong feeling in your gut told you not to mess with them.\n")
+      time.sleep(2)
+      print ("You turn back and look around the cave some more\n")
+      time.sleep(2)
+      print ("As you move about the cave you encounter various monsters and defeat strange monsters that challenged you.\n ")
+      time.sleep(3)
+      print ("Each fight allowing you to gain different abilities and grow more powerful.\n")
+      time.sleep(2)
+      print ("...")
+      time.sleep(2)
+      print ("You slide into a small entrance in the wall and on the other side you see small blue creatures huddled up\n")
+      time.sleep(2)
+      print ("You look towards the direction they were facing and see a giant bear with an oppressive presence\n")
+      time.sleep(3)
+      print ("It looks towards your direction.\n")
+      time.sleep(3)
+      print ("Looks like there's no escape. You brace yourself for the battle.\n")
+      time.sleep(3)
+      print ("Due to the previous battles inside the cave, you are left with only using 3 more skills.")
+      time.sleep(2)
+      print ("Fire, Dust, and Earth. Use them well.")
+      time.sleep(3)
+      ch3=str(raw_input("What will you do? (Earth/Fire/Dust).\n"))
+      if ch3 == "earth" or ch3 == "Earth\n":#Earth Route=Fire/Dust
+           print("You use a skill that sends out many shards of earth at the bear\n")
+           time.sleep(3)
+           print ("The shards pierce the bears skin causing big damage, as well as hitting the bear in its eye.\n")
+           time.sleep(2)
+           print ("Agitated, the bear rushes you down and takes a huge swing at you\n")
+           time.sleep(3)
+           ch4=str(raw_input("What will you do? (Fire/Dust).\n"))
+           if ch4 == "dust" or ch4 == "Dust\n":#Checks if inputed dust, leaving only fire
+               time.sleep(3)
+               print("The dust interupts the bear's charge and blinds it again, as well as irritates its lungs\n")
+               time.sleep(2)
+               print (" The dust surrounds the bear and using the last skill you have\n")
+               time.sleep(2)
+               print (" You ignite the bear with a small fire, causing a reaction with the dust\n")
+               time.sleep(2)
+               print ("Creating an explosion, taking out the bear and winning the battle\n")
+               time.sleep(2)
+               print("After the dust settled you looked back at the gelatonous monsters, who were staring back at you\n")
+               time.sleep(2)
+               print("The little blue monsters reminded you of a kind of jello.\n")
+               time.sleep(3)
+               print("They looked at you as if you were one of them and their savior and it seemed as though they were going to follow you.\n")
+               time.sleep(3)
+               print(" With the little monsters in tow, you see another exit a small way from the area you fought.\n")
+               time.sleep(2)
+               print("You at last made it to the end of the cave...\n")
+               time.sleep(2)
+               print("And at the end of the cave, you felt as if you could see the whole world.\n")
+               time.sleep(2)
+               print(" Congrats on escaping the cave!\n")
+               sys.exit()
+
+           elif ch4 == "fire" or ch4 == "Fire\n":#Inputed fire
+               time.sleep(3)
+               print ("The fire makes contact with the bear but only angered it more\n")
+               time.sleep(3)
+               print ("The bear hits you with its reinforced claw causing critical damage, and taking you out")
+               return death
+           else:
+               print("Not a valid response. Please Input yes or no.\n")
+      elif ch3 == "fire" or ch3 == "Fire\n":#Fire route/Fail
+        time.sleep(3)
+        print ("The fire makes contact with the bear but only angered it more\n")
+        time.sleep(3)
+        print ("The bear hits you with its reinforced claw causing critical damage, and taking you out")
+        return death
+      elif ch3 == "dust" or ch3 == "Dust\n":#Dust Route=Earth/Fire
+        time.sleep(3)
+        print("The dust interupts the bear's charge and blinds it again, as well as irritates its lungs\n")
+        ch5=str(raw_input("What will you do? (Earth/Fire).\n"))
+        if ch5 == "fire" or ch5 == "Fire\n":#Fire + Dust
+            print (" The dust surrounds the bear and using the last skill you have\n")
+            time.sleep(3)
+            print (" You ignite the bear with a small fire, causing a reaction with the dust\n")
+            time.sleep(3)
+            print ("Creating an explosion, taking out the bear and winning the battle\n")
+            time.sleep(3)
+            print("After the dust settled you looked back at the gelatonous monsters, who were staring back at you\n")
+            time.sleep(3)
+            print("The little blue monsters reminded you of a kind of jello.\n")
+            time.sleep(3)
+            print("They looked at you as if you were one of them and their savior and it seemed as though they were going to follow you.\n")
+            time.sleep(3)
+            print(" With the little monsters in tow, you see another exit a small way from the area you fought.\n")
+            time.sleep(3)
+            print("You at last made it to the end of the cave...\n")
+            time.sleep(3)
+            print("And at the end of the cave, you felt as if you could see the whole world.\n")
+            time.sleep(3)
+            print(" Congrats on escaping the cave!\n")
+            sys.exit()
+        elif ch5 == "earth" or ch5 == "Earth\n":
+              time.sleep(3)
+              print("You use a skill that sends out many shards of earth at the bear\n")
+              time.sleep(3)
+              print (" The rocks pierce the bear's skin and hits its eyes.\n")
+              time.sleep(3)
+              print ("The bear, reaching an heightened state of agitation, discharges its magic indiscriminately\n")
+              time.sleep(3)
+              print ("The attack does critical damage to you, as well as the other monsters in the area out.")
+              return death
+        else:
+         print("Not a valid response. Please Input yes or no.\n")
+
+
+
+story()
